@@ -23,6 +23,7 @@ class DynamicLinksService {
   static void _handleDynamicLink(PendingDynamicLinkData dynamicLink) async {
     final Uri _deepLink = dynamicLink.link;
 
+    // Show message in debug
     debugPrint(_deepLink.toString());
     Fluttertoast.showToast(
       msg: _deepLink.toString(),
